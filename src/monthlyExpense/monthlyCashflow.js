@@ -46,7 +46,7 @@ export default function CustomizedTables() {
   const [incomeList, setIncomelist] = useState([]);
 
   useEffect(() => {
-    Axios.get("http://localhost:3005/moneyManager/getmoney").then(
+    Axios.get("https://usingmongodb.herokuapp.com/moneyManager/getmoney").then(
       (response) => {
         console.log(response.data);
         setIncomelist(response.data);
