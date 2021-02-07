@@ -19,15 +19,10 @@ import {
 } from "react-router-dom";
 
 function App() {
-  let movie = null;
-  // console.log(datee);
-  // validd();
-
   let [incomedate, setIncomeDate] = useState("");
   let [income, setIncome] = useState("");
   // const [expensedate, setExpenseDate] = useState("");
   let [expense, setExpense] = useState("");
-  // const [review, setReview] = useState("");
   const [incomeList, setIncomelist] = useState([]);
   useEffect(() => {
     Axios.get("https://usingmongodb.herokuapp.com/moneyManager/getmoney").then(
@@ -37,27 +32,17 @@ function App() {
       }
     );
   }, []);
-  movie = incomeList.map((val) => {
-    console.log(val.date, +val.income, +val.expense);
-    // if (incomeList.length <= 7) {
-    return (
-      <div>
-        <table>
-          <tr>
-            <td>{val.id}</td>
-            <td>{val.income}</td>
-            <td>{val.expense}</td>
-            <td>{val.date}</td>
-          </tr>
-        </table>
 
-        {/* id:{val.id}, date:{val.date}, income:= {val.income},expense:
-        {val.expense} */}
-      </div>
-    );
-    // }
-  });
   const submitReview = () => {
+    var regEx = /^\d{4}-\d{2}-\d{2}$/;
+    let p = incomedate.match(regEx) != null;
+    if (!p) {
+      return swal({
+        title: "invalid date format",
+        icon: "warning",
+        dangerMode: true,
+      });
+    }
     Axios.post("https://usingmongodb.herokuapp.com/moneyManager/postmoney", {
       date: incomedate,
       income: income,
@@ -137,15 +122,12 @@ function App() {
                 </Link>
               </div>
             </div>
-
-            {/* {movie} */}
           </div>
         </Route>
         <Route path="/monthly/:id" exact>
           <CustomizedTables />
         </Route>
         <Route path="/weekly/:id" exact>
-          {/* {movie} */}
           {/* <Weeklyflow></Weeklyflow> */}
           <CustomizedTabless />
           {/* <EnhancedTable></EnhancedTable> */}

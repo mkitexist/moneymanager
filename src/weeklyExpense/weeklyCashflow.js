@@ -52,8 +52,6 @@ export default function CustomizedTabless() {
       }
     );
   }, []);
-  // let movie = null;
-  let rows = [];
 
   // rows = [
   //
@@ -81,7 +79,6 @@ export default function CustomizedTabless() {
   });
   //  }
 
-  // let y =<h1></h1>
   return (
     <div className="monthly">
       <Link to="/">

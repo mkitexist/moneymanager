@@ -53,7 +53,6 @@ export default function CustomizedTables() {
       }
     );
   }, []);
-  // let movie = null;
   let rows = [];
 
   // rows = [
@@ -82,7 +81,6 @@ export default function CustomizedTables() {
   });
   //  }
 
-  // let y =<h1></h1>
   return (
     <div className="maincont">
       <div className="home">

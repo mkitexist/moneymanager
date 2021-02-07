@@ -81,14 +81,10 @@ export default function CustomizedTablesss() {
   //  }
 
   let expense = incomeList.map((v, i) => {
-    // if (i <= 31) {
     return v.expense;
-    // }
   });
   let income = incomeList.map((v, i) => {
-    // if (i <= 31) {
     return v.income;
-    // }
   });
   console.log(expense);
 
@@ -103,7 +99,6 @@ export default function CustomizedTablesss() {
     return a + d;
   }, 0);
 
-  // let y =<h1></h1>
   return (
     <div className="monthly">
       <div className="insideMonthly">
@@ -131,8 +126,6 @@ export default function CustomizedTablesss() {
             </StyledTableRow>
           ))} */}
               {p}
-              {/* </div> */}
-              {/* {p} */}
             </TableBody>
           </Table>
         </TableContainer>
