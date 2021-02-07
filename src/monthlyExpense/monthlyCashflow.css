@@ -1,0 +1,28 @@
+.monthly {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+}
+.maincont {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+@media (min-width: 400px) {
+  /* .insideMonthly {
+    border: 2px solid green;
+    width: 20%;
+    background-color: blue;
+  } */
+}
+.button {
+  background-color: #8093f1;
+  height: 50px;
+  width: 250px;
+  color: #ffe900;
+  border-style: none;
+  font-family: "Varela Round", sans-serif;
+}

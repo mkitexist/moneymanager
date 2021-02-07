@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+.App {
+  text-align: center;
+}
+.container {
+  /* border: 2px solid red; */
+  height: 100vh;
+  width: 100%;
+  /* background-color: #141618; */
+  background-image: url("./images/ninth.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Varela Round", sans-serif;
+  color: #48a9a6;
+  font-size: 20px;
+}
+.form {
+  display: flex;
+  /* flex-direction:; */
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.form input {
+  width: 250px;
+  height: 40px;
+  margin: 10px;
+  font-size: 25px;
+  border-radius: 15px;
+  outline-style: none;
+}
+.butoncontainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  top: 100px;
+  /* background-color: aqua; */
+}
+.sub {
+  position: relative;
+  /* top: 100px; */
+  /* left: -500px; */
+  height: 50px;
+  width: 150px;
+  border-radius: 10px;
+  background-color: #ff7f11;
+  outline-style: none;
+  border-style: none;
+  color: #d72638;
+  /* color: #e0dfd5; */
+  letter-spacing: 4px;
+  font-family: "Varela Round", sans-serif;
+}
+input {
+  position: relative;
+  top: 80px;
+  text-align: center;
+  border-style: none;
+  left: -60px;
+}
+.label {
+  position: relative;
+  top: 40px;
+  text-align: center;
+  border-style: none;
+  right: -120px;
+  /* color: #d90368; */
+  color: #bacba9;
+
+  letter-spacing: 3px;
+}
+/* @media(min-width 600 px){
+
+} */
+.viewtabcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+
+  width: 100%;
+  height: 200px;
+  /* border: 2px solid blue; */
+  /* background-color: rgb(150, 150, 60); */
+  background-image: url("./images/ninth.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  top: 138px;
+}
+.view {
+  /* margin-left: 200px; */
+  /* margin: auto; */
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 10px;
+  width: 200px;
+
+  background-color: #0c1821;
+  border-radius: 12px;
+  outline-style: none;
+  border-style: none;
+  color: #c1e0f7;
+  letter-spacing: 4px;
+}
+.head {
+  position: sticky;
+  width: 100%;
+  height: 40px;
+  /* border: 2px solid red; */
+  top: 0px;
+  text-align: center;
+  font-family: "Varela Round", sans-serif;
+  color: #48a9a6;
+  /* background-color: #92d5e6; */
+  background-color: #e3f2fd;
+  letter-spacing: 17px;
+  word-spacing: 25px;
+}
+.viewtabcontainer > div {
+  /* border: 2px solid green; */
+}
+@media (max-width: 500px) {
+  .label {
+    display: none;
+  }
+  .sub {
+    position: relative;
+    top: 100px;
+  }
+  input {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    /* background-color: #ddfbf6; */
+    background-color: #e7d8f4;
+    border-radius: 30px;
+    height: 150%;
+    border: 3px solid #e7e3e2;
+    color: rgb(36, 1, 1);
+    background-image: url("./images/eigth.jpg");
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-x: right;
+    background-position-y: top;
+  }
+  .view {
+    /* background-color: greenyellow; */
+    /* background-color: #141618; */
+    background-color: #0c1821;
+
+    margin-top: 10px;
+    width: 270px;
+    color: #c1e0f7;
+
+    outline-offset: 1px;
+    border-radius: 30px;
+    border-style: none;
+    position: relative;
+    top: -100px;
+  }
+  .sub {
+    background-color: rgb(255, 47, 47);
+    color: white;
+    border-style: none;
+    position: relative;
+    top: 50px;
+  }
+  .viewtabcontainer {
+    top: 20px;
+    background-image: none;
+  }
+  input {
+    top: 60px;
+    color: black;
+
+    background-color: #fbfcfd;
+    outline-style: none;
+    border-style: none;
+    position: relative;
+    /* margin-top: 50px;
+    margin-bottom: 50px; */
+  }
+  .butoncontainer {
+    top: 30px;
+  }
+  .head {
+    /* display: none; */
+    letter-spacing: 5px;
+    font-size: 10px;
+    word-spacing: 5px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    position: relative;
+    top: 50px;
+    /* top: -50px; */
+  }
+  .head > h1 {
+    position: relative;
+    top: -2px;
+  }
+  .label {
+    display: none;
+    /* position: relative;
+    top: 60px;
+    left: -70px;
+    color: red;
+    letter-spacing: 2px; */
+  }
+  .form {
+    position: relative;
+    left: 55px;
+  }
+}

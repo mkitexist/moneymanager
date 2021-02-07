@@ -1,0 +1,91 @@
+.cardd {
+  height: 300px;
+  width: 100%;
+  /* border: 2px solid red; */
+  /* background-color: aquamarine; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 100px;
+}
+
+.innerCard,
+.innerCardtwo,
+.innerCardthree {
+  /* background-image: url("./images/secondcard.jpg"); */
+  margin-left: 40px;
+  margin-right: 40px;
+  height: 200px;
+  width: 350px;
+  border-radius: 7px;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: cover;
+}
+/* .innerCardtwo {
+  background-image: url("./images/secondcard.jpg");
+
+  height: 200px;
+  width: 350px;
+  border-radius: 7px;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; 
+  background-size: cover;
+} */
+/* .innerCard {
+  height: 200px;
+  width: 350px;
+  border-radius: 7px;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; 
+  background-size: cover;
+} */
+.innerCard {
+  background-image: url("./images/secondcard.jpg");
+}
+.innerCardtwo {
+  background-image: url("./images/fifth.jpg");
+}
+.innerCardthree {
+  background-image: url("./images/fourth.jpg");
+}
+@media (max-width: 600px) {
+  .innerCard,
+  .innerCardtwo,
+  .innerCardthree {
+    /* background-image: url("./images/secondcard.jpg"); */
+    margin-left: 8px;
+    margin-right: 8px;
+    height: 90px;
+    width: 150px;
+    border-radius: 7px;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    position: relative;
+    top: -100px;
+  }
+}
+@media (max-width: 500px) {
+  .innerCard,
+  .innerCardtwo,
+  .innerCardthree {
+    /* background-image: url("./images/secondcard.jpg"); */
+    margin-left: 3px;
+    margin-right: 3px;
+    height: 50px;
+    width: 100px;
+    border-radius: 7px;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    position: relative;
+    top: -100px;
+  }
+}

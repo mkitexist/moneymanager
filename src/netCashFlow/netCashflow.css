@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap");
+
+.monthly {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+}
+label {
+  position: relative;
+}
+.labelconatiner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aquamarine;
+  height: 100px;
+  width: 100%;
+}
+.labelconatiner > div {
+  position: relative;
+  /* left: -100px; */
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 20px;
+  font-family: "Yusei Magic", sans-serif;
+}
+/* .button {
+  background-color: #8093f1;
+  height: 50px;
+  width: 250px;
+  color: #ffe900;
+  border-style: none;
+  font-family: "Varela Round", sans-serif;
+  border-style: none;
+} */
