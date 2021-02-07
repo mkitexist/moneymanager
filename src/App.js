@@ -53,7 +53,7 @@ function App() {
     });
     setTimeout(() => {
       window.location.reload();
-    }, 700);
+    }, 1500);
   };
   let p =
     expense.length && income.length && incomedate.length > 1 ? false : true;
