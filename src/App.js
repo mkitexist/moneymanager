@@ -87,7 +87,7 @@ function App() {
               <input
                 type="text"
                 name="name"
-                // placeholder="2021-01-2"
+                placeholder="YYYY-MM-DD"
                 // onFocus="do enter something"
                 onChange={(e) => {
                   // console.log(e);
@@ -102,7 +102,7 @@ function App() {
               <input
                 type="text"
                 name="name"
-                // placeholder="income"
+                placeholder="INCOME"
                 onChange={(e) => {
                   setIncome(e.target.value);
                 }}
@@ -112,7 +112,7 @@ function App() {
               <input
                 type="text"
                 name="name"
-                // placeholder="expense"
+                placeholder="EXPENSE"
                 onChange={(e) => {
                   setExpense(e.target.value);
                 }}

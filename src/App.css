@@ -74,6 +74,7 @@ input {
   color: #bacba9;
 
   letter-spacing: 3px;
+  visibility: hidden;
 }
 /* @media(min-width 600 px){
 
@@ -224,5 +225,17 @@ input {
   .form {
     position: relative;
     left: 55px;
+  }
+}
+::placeholder {
+  letter-spacing: 2px;
+  font-family: "Varela Round", sans-serif;
+  /* color: #9097c0; */
+  font-size: 15px;
+  color: #bacba9;
+}
+@media (max-width: 1000px) {
+  .label {
+    display: none;
   }
 }
